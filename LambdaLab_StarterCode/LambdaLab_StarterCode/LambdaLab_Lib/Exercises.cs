@@ -21,7 +21,7 @@ public class Exercsises
     public static List<Spartan> SortByAlphabeticallyByLastName(List<Spartan> spartans) =>
         spartans.OrderBy(s => s.LastName).ToList();
 
-    public static List<string> ListAllDistinctCities(List<Spartan> spartans) =>
+    public static List<string?> ListAllDistinctCities(List<Spartan> spartans) =>
         spartans.Select(s => s.City).Distinct().ToList();
 
     public static List<Spartan> ListAllSpartansWithIdBeginingWithB(List<Spartan> spartans) =>
